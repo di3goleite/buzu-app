@@ -5,6 +5,7 @@ angular.module('buzu.controllers', [])
 
 	Routes.index()
 	.success(function(data) {
+		$scope.schedule = data;
 		console.log(data);
 	})
 	.error(function(error) {
