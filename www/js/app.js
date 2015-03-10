@@ -1,4 +1,4 @@
-angular.module('buzu', ['ionic', 'buzu.controllers'])
+angular.module('buzu', ['ionic', 'buzu.controllers', 'buzu.factories'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -11,4 +11,13 @@ angular.module('buzu', ['ionic', 'buzu.controllers'])
       StatusBar.styleDefault();
     }
   });
+})
+
+.config(function($stateProvider) {
+	$stateProvider
+		.state('routes', {
+			url: '/routes',
+			templateUrl: 'templates/routes.html',
+			controller: 'RoutesCtrl'
+		});
 });
