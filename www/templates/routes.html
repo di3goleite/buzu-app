@@ -1,12 +1,9 @@
 <ion-view view-title="Rotas">
 	<ion-content>
-		<table>
-			<tr ng-repeat="route in schedule">
-				<td>
-					<!-- <p>huehuebrbr</p> -->
-					{{route.route}}
-				</td>
-			</tr>
-		</table>
+		<div class="list" ng-repeat="route in schedule">
+			<a class="item">
+				{{route.route[0]}}
+			</a>
+		</div>
 	</ion-content>
 </ion-view>
