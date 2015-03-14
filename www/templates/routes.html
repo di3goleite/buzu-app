@@ -1,9 +1,10 @@
 <ion-view view-title="Rotas">
 	<ion-content>
 		<div class="list" ng-repeat="route in schedule">
-			<a class="item">
-				{{route.route[0]}}
-			</a>
+			<div>
+				{{$index}}
+				{{route.route}}
+			</div>
 		</div>
 	</ion-content>
 </ion-view>
